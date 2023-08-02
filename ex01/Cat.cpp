@@ -12,7 +12,7 @@
 
 #include "Cat.hpp"
 
-Cat::Cat(void) {
+Cat::Cat() {
     std::cout << "Cat default constructor" << std::endl;
     _type = "Cat";
     brain = new Brain();
@@ -43,7 +43,7 @@ void Cat::makeSound() const {
 
 void Cat::generateIdeas(std::string ideas[100])
 {
-    for (int i; i < 100; i++)
+    for (int i = 0; i < 100; i++)
         brain->setIdea(i, ideas[i]);
 }
 

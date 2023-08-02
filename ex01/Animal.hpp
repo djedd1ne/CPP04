@@ -25,7 +25,6 @@ class Animal {
     
     public:
         Animal();
-        Animal(const std::string &type);
         Animal(const Animal &copy);
         virtual ~Animal();
         Animal& operator=(const Animal &obj);
